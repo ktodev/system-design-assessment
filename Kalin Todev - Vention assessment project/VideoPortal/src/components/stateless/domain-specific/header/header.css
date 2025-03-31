@@ -1,0 +1,25 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  margin-bottom: 3px;
+  background: #c7d5da;
+  color: #2b5a68;
+  border-bottom: 3px solid #2b5a68;
+}
+
+#header .loading .spinner {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#header .loading .spinner span {
+  padding-left: 10px;
+}
+
+#header button {
+  margin-left: 10px;
+}

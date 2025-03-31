@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+
+/* Below wrappers allow customization of a child component from its parent according to needs
+This makes the underlying component more reusable and flexible, since it only builds the layout and shows the data,
+but leaves all visual styling to the parent component (like font, borders, colors, background, etc) 
+Of course such components can have their own default styling */
+.movies {
+  height: 100vh;
+  overflow: auto;
+  padding: 0 0 140px 0;
+}
+.movies ul {
+  list-style-type: none;
+  padding: 0;
+}
+.movie {
+  margin: 1em;
+  padding: 2px;
+}
+
+.movie-card h4 {
+  background-color: #d8e6eb;
+}
+
+
+/* mixins should be used to generate these common shared styles
+predefined tokens for px, colors, fonths, etc should be used
+CSS pre-processors like LESS/SASS provide all that */
+.movie-details-content {
+  display: flex;
+  padding: 20px;
+  border: 2px solid #cacaca;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.movie-details-content p {
+  padding-top: 20px;
+  margin: 0px;
+}

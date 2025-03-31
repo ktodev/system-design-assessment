@@ -1,0 +1,61 @@
+.movie-card {
+    border-radius: 8px; 
+    padding: 10px;
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+  }
+  
+  .movie-card:hover {
+    border-color: rgb(96, 118, 126);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-card>h4 {
+    display: flex;
+    padding: 5px;
+  }
+  
+  .movie-card .content {
+    display: flex;
+  }
+
+  .movie-card .content .additional{
+    padding: 0 20px;
+  }
+  .movie-card .content .additional .short-description{
+    font-weight: normal;
+  }
+  
+  .movie-card .content .watched {
+    font-weight: bold;
+  }
+
+  .movie-card .content p {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .movie-card p.favorite {
+    color: #d82b2b;
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .movie-card p.non-favorite {
+    color: #868686;
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .movie-card .actions {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+  .actions button {
+    margin-right: 5px;
+  }
